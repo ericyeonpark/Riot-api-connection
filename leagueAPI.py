@@ -10,3 +10,7 @@ my_region = 'na1'
 
 me = watcher.summoner.by_name(my_region, 'Doublelift')
 print(me)
+
+# Return the rank status for Doublelift
+my_ranked_stats = watcher.league.by_summoner(my_region, me['id'])
+print(my_ranked_stats)
